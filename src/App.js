@@ -1,13 +1,19 @@
 import './App.css';
 import React from 'react';
 import Article from './Article';
+import Typing from './Typing';
+import Image from './Image';
 
 function App(props) {
   return (
-    <div>
-      <h1>Hello, world! Welcome to {props.language} !</h1>
+    <>
+      <br></br>
+      <h1 id='heading'>Welcome to {props.language} !</h1>
       <Article component ="Function"/>
-    </div>
+      <br></br>
+      <Typing/>
+      <Image/>
+    </>
   );
 }
 export default App;
